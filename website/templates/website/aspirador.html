@@ -1,0 +1,11 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+    <h3>Robô Aspirador</h3>
+    <p>O <a href="https://pt.aliexpress.com/i/33024930650.html">robô aspirador</a>, é um robô que limpa sua casa automaticamente,
+        como um aspirador de pó.</p>
+{% endblock %}
+{% block aside %}
+    {% load static %}
+    <img style= "width: 300px; height: 280px"src="{% static 'website/images/roboAspirador.jpg' %}">
+{% endblock %}

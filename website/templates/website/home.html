@@ -1,0 +1,10 @@
+<!-- home.html -->
+{% extends 'website/base.html' %}
+{% block main %}
+    <h3>Os 3 melhores artigos para sua casa</h3>
+    <p>Ao comprar estes produtos vai ter a sua vida facilitada a 500% </p>
+{% endblock %}
+{% block aside %}
+    {% load static %}
+    <img   src="{% static 'website/images/familiaFeliz.jpeg' %}">
+{% endblock %}

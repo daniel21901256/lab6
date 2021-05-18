@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Melhores Artigos Para Casa</h1>
+        <p>Veja aqui os melhores artigos para ter em sua casa de modo a facilitar a sua vida</p>
+        <nav>
+            <a href="{% url 'website:home' %}" class="btn btn-info">Home</a>
+            <a href="{% url 'website:alexa' %}" class="btn btn-info">Alexa</a>
+            <a href="{% url 'website:aspirador' %}" class="btn btn-info">Robô Aspirador</a>
+            <a href="{% url 'website:bimby' %}" class="btn btn-info">Bimby</a>
+        </nav>
+    </header>
+    <center>
+    <article class="container">
+        <main class="col-sm-6">
+
+	{% block main %}
+    {% endblock main %}
+
+        </main>
+    </center>
+    <center>
+        <aside class="col-sm-6">
+            {% block aside %}
+	        {% endblock aside %}
+        </aside>
+    </center>
+    </article>
+    <footer>Se tiver estes produtos vai ser tão feliz como a familia que aparece na aba Home</footer>
+
+</body>
+</html>

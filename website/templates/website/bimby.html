@@ -1,0 +1,12 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+    <h3>Bimby</h3>
+    <p>A <a href="https://bimby.vorwerk.pt/comprar-a-bimbyr/?gclid=CjwKCAjw1uiEBhBzEiwAO9B_HZwplw8nceeqcgKfYWOndlLTpH6-Ca7uEJ2sjZnTCA7_s0Dp078nABoCRX8QAvD_BwE">
+        Bimby</a> é um robot de cozinha, que serve para pulverizar,
+        picar, bater massas, cozinhar a vapor ou cozinhar directamente os alimentos.</p>
+{% endblock %}
+{% block aside %}
+     {% load static %}
+    <img style="width: 400px; height: 280px" src="{% static 'website/images/bimby.jpg' %}">
+{% endblock %}

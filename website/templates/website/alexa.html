@@ -1,0 +1,11 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+    <h3>Alexa</h3>
+    <p>     A <a href="https://www.amazon.com/s?k=alexa&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss">Amazon Alexa</a> é uma assistente virtual desenvolvida pela Amazon capaz de interagir com voz, reproduzir música, fazer
+        listas de afazeres e outras informações em tempo real além de controlar sistemas e aparelhos inteligentes e conectados. </p>
+{% endblock %}
+{% block aside %}
+     {% load static %}
+    <img style= " height: 250px" src="{% static 'website/images/alexa.png' %}">
+{% endblock %}
